@@ -1,8 +1,8 @@
 FROM nginx:1.23.3-alpine-slim
 
 WORKDIR /usr/share/nginx/html
-ADD --chown=1001:1001 ./progjs.tar.gz .
-RUN cat modelo.html > index.html
+COPY --chown=1001:1001 ./app/* .
+RUN cat home.html > index.html
 
 LABEL description="Progressao Geometrica JS"
 LABEL version="1.2"
