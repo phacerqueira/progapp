@@ -5,6 +5,7 @@ COPY --chown=1001:1001 ./app/* .
 RUN cat home.html > index.html
 
 LABEL description="Progressao Geometrica JS"
+LABEL talk="CodeXperience 2024"
 LABEL version="1.2"
 
 EXPOSE 80
